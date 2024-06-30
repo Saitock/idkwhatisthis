@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sai's home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to White Space. You have been living here for as long as you can remember.</h1>
+    <div class="container">
+        <h1>My List:</h1>
+        <div class="search-group">
+            <input type="search" id="search-input" placeholder="Search from memo...">
+        </div>
+        <div class="input-group">
+            <input type="text" id="memo-input" placeholder="Type anything here...">
+            <button id="add-memo-button">Add</button>
+        </div>
+        <h2>Working on:</h2>
+        <ul id="memo-list"></ul>
+        <h2>Completed:</h2>
+        <ul id="completed-list"></ul>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
